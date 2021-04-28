@@ -281,14 +281,12 @@ function createMap(){
     });
 
 //mapbox basemap
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZW1pbGxpZ2FuIiwiYSI6ImNqczg0NWlxZTBia2U0NG1renZyZDR5YnUifQ.UxV3OqOsN6KuZsclo96yvQ', {
+L.tileLayer('https://api.mapbox.com/styles/v1/elliemaps/cko0rzuyj083g17pgj4biuhph/wmts?access_token=pk.eyJ1IjoiZWxsaWVtYXBzIiwiYSI6ImNrbXNnbjN5azBnd2oyb213dzBhdGdnZ2gifQ.9fdQ8YxOegRtVogCbhI60Q', {
     //map attribution
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="http://mapbox.com">Mapbox</a>',
+    attribution: 'Basemap &copy; <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
-    //uses mapbox streets as opposed to satellite imagery, etc.
-    id: 'mapbox.dark',
     //my unique access token
-    accessToken: 'pk.eyJ1IjoiZW1pbGxpZ2FuIiwiYSI6ImNqczg0NWlxZTBia2U0NG1renZyZDR5YnUifQ.UxV3OqOsN6KuZsclo96yvQ'
+    accessToken: 'pk.eyJ1IjoiZWxsaWVtYXBzIiwiYSI6ImNrbzByeGplMjAzcTkycHM1dDFiMWdibWEifQ.ITnFOm-Ik1GvY7pJCA0vDw'
 }).addTo(map);
     
         getData(map);
